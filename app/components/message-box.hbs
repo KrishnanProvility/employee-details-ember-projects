@@ -1,0 +1,13 @@
+<Message::Avatar
+  @title={{concat this.name "'s avatar"}}
+  @initial={{this.name}}
+  @isActive={{@isCurrentUser}}
+  @class="{{if @isCurrentUser 'current-user'}}"
+ />
+
+
+<section>
+  <Message::Username @name={{@username}} @localTime={{@userLocalTime}} />
+
+  {{yield}}
+</section>
