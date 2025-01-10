@@ -115,8 +115,8 @@
   const __COLOCATED_TEMPLATE__ = (0, _templateFactory.createTemplateFactory)(
   /*
     <Message::Avatar
-    @title={{concat this.name "'s avatar"}}
-    @initial={{this.name}}
+          @title="{{@username}}'s avatar"
+    @initial={{@avatarInitial}}
     @isActive={{@isCurrentUser}}
     @class="{{if @isCurrentUser 'current-user'}}"
    />
@@ -129,8 +129,8 @@
   </section>
   */
   {
-    "id": "zfMkzChO",
-    "block": "[[[8,[39,0],null,[[\"@title\",\"@initial\",\"@isActive\",\"@class\"],[[28,[37,1],[[30,0,[\"name\"]],\"'s avatar\"],null],[30,0,[\"name\"]],[30,1],[29,[[52,[30,1],\"current-user\"]]]]],null],[1,\"\\n\\n\\n\"],[10,\"section\"],[12],[1,\"\\n  \"],[8,[39,4],null,[[\"@name\",\"@localTime\"],[[30,2],[30,3]]],null],[1,\"\\n\\n  \"],[18,4,null],[1,\"\\n\"],[13]],[\"@isCurrentUser\",\"@username\",\"@userLocalTime\",\"&default\"],false,[\"message/avatar\",\"concat\",\"if\",\"section\",\"message/username\",\"yield\"]]",
+    "id": "a+pCPaxs",
+    "block": "[[[8,[39,0],null,[[\"@title\",\"@initial\",\"@isActive\",\"@class\"],[[29,[[30,1],\"'s avatar\"]],[30,2],[30,3],[29,[[52,[30,3],\"current-user\"]]]]],null],[1,\"\\n\\n\\n\"],[10,\"section\"],[12],[1,\"\\n  \"],[8,[39,3],null,[[\"@name\",\"@localTime\"],[[30,1],[30,4]]],null],[1,\"\\n\\n  \"],[18,5,null],[1,\"\\n\"],[13]],[\"@username\",\"@avatarInitial\",\"@isCurrentUser\",\"@userLocalTime\",\"&default\"],false,[\"message/avatar\",\"if\",\"section\",\"message/username\",\"yield\"]]",
     "moduleName": "ember-test-app/components/message-box.hbs",
     "isStrictMode": false
   });
@@ -584,7 +584,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("ember-test-app/app")["default"].create({"name":"ember-test-app","version":"0.0.0+04c6976f"});
+            require("ember-test-app/app")["default"].create({"name":"ember-test-app","version":"0.0.0+cc6aa18c"});
           }
         
 //# sourceMappingURL=ember-test-app.map

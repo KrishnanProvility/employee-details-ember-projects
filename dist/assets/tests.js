@@ -58,9 +58,9 @@ define("ember-test-app/tests/integration/components/error-dailog-test", ["qunit"
         <ErrorDailog />
       */
       {
-        "id": "flJjELun",
+        "id": "b6gePU0O",
         "block": "[[[8,[39,0],null,null,null]],[],false,[\"error-dailog\"]]",
-        "moduleName": "/Users/provility/Documents/wokspace/ember-worlspace/ember-test-app/ember-test-app/tests/integration/components/error-dailog-test.js",
+        "moduleName": "/Users/provility/Documents/wokspace/ember-worlspace/practice-ember-js/ember-test-app/tests/integration/components/error-dailog-test.js",
         "isStrictMode": false
       }));
       assert.dom().hasText('');
@@ -75,9 +75,9 @@ define("ember-test-app/tests/integration/components/error-dailog-test", ["qunit"
           
       */
       {
-        "id": "yWRwlzhS",
+        "id": "HwUZVHit",
         "block": "[[[1,\"\\n      \"],[8,[39,0],null,null,[[\"default\"],[[[[1,\"\\n        template block text\\n      \"]],[]]]]],[1,\"\\n    \"]],[],false,[\"error-dailog\"]]",
-        "moduleName": "/Users/provility/Documents/wokspace/ember-worlspace/ember-test-app/ember-test-app/tests/integration/components/error-dailog-test.js",
+        "moduleName": "/Users/provility/Documents/wokspace/ember-worlspace/practice-ember-js/ember-test-app/tests/integration/components/error-dailog-test.js",
         "isStrictMode": false
       }));
       assert.dom().hasText('template block text');
