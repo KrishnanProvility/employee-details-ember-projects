@@ -43,13 +43,54 @@ define("ember-test-app/tests/helpers/index", ["exports", "ember-qunit"], functio
     // Additional setup for unit tests can be done here.
   }
 });
+define("ember-test-app/tests/integration/components/calculator-test", ["qunit", "ember-test-app/tests/helpers", "@ember/test-helpers", "@ember/template-factory"], function (_qunit, _helpers, _testHelpers, _templateFactory) {
+  "use strict";
+
+  0; //eaimeta@70e063a35619d71f0,"qunit",0,"ember-test-app/tests/helpers",0,"@ember/test-helpers",0,"@ember/template-factory"eaimeta@70e063a35619d71f
+  (0, _qunit.module)("Integration | Component | calculator", function (hooks) {
+    (0, _helpers.setupRenderingTest)(hooks);
+    (0, _qunit.test)("it renders", async function (assert) {
+      // Set any properties with this.set('myProperty', 'value');
+      // Handle any actions with this.set('myAction', function(val) { ... });
+
+      await (0, _testHelpers.render)((0, _templateFactory.createTemplateFactory)(
+      /*
+        <Calculator />
+      */
+      {
+        "id": "JHHIg2Hk",
+        "block": "[[[8,[39,0],null,null,null]],[],false,[\"calculator\"]]",
+        "moduleName": "/Users/provility/Documents/wokspace/ember-worlspace/practice-ember-js/ember-test-app/tests/integration/components/calculator-test.js",
+        "isStrictMode": false
+      }));
+      assert.dom().hasText("");
+
+      // Template block usage:
+      await (0, _testHelpers.render)((0, _templateFactory.createTemplateFactory)(
+      /*
+        
+            <Calculator>
+              template block text
+            </Calculator>
+          
+      */
+      {
+        "id": "LSfKac3I",
+        "block": "[[[1,\"\\n      \"],[8,[39,0],null,null,[[\"default\"],[[[[1,\"\\n        template block text\\n      \"]],[]]]]],[1,\"\\n    \"]],[],false,[\"calculator\"]]",
+        "moduleName": "/Users/provility/Documents/wokspace/ember-worlspace/practice-ember-js/ember-test-app/tests/integration/components/calculator-test.js",
+        "isStrictMode": false
+      }));
+      assert.dom().hasText("template block text");
+    });
+  });
+});
 define("ember-test-app/tests/integration/components/error-dailog-test", ["qunit", "ember-test-app/tests/helpers", "@ember/test-helpers", "@ember/template-factory"], function (_qunit, _helpers, _testHelpers, _templateFactory) {
   "use strict";
 
   0; //eaimeta@70e063a35619d71f0,"qunit",0,"ember-test-app/tests/helpers",0,"@ember/test-helpers",0,"@ember/template-factory"eaimeta@70e063a35619d71f
-  (0, _qunit.module)('Integration | Component | error-dailog', function (hooks) {
+  (0, _qunit.module)("Integration | Component | error-dailog", function (hooks) {
     (0, _helpers.setupRenderingTest)(hooks);
-    (0, _qunit.test)('it renders', async function (assert) {
+    (0, _qunit.test)("it renders", async function (assert) {
       // Set any properties with this.set('myProperty', 'value');
       // Handle any actions with this.set('myAction', function(val) { ... });
 
@@ -63,7 +104,7 @@ define("ember-test-app/tests/integration/components/error-dailog-test", ["qunit"
         "moduleName": "/Users/provility/Documents/wokspace/ember-worlspace/practice-ember-js/ember-test-app/tests/integration/components/error-dailog-test.js",
         "isStrictMode": false
       }));
-      assert.dom().hasText('');
+      assert.dom().hasText("");
 
       // Template block usage:
       await (0, _testHelpers.render)((0, _templateFactory.createTemplateFactory)(
@@ -80,7 +121,31 @@ define("ember-test-app/tests/integration/components/error-dailog-test", ["qunit"
         "moduleName": "/Users/provility/Documents/wokspace/ember-worlspace/practice-ember-js/ember-test-app/tests/integration/components/error-dailog-test.js",
         "isStrictMode": false
       }));
-      assert.dom().hasText('template block text');
+      assert.dom().hasText("template block text");
+    });
+  });
+});
+define("ember-test-app/tests/integration/helpers/substring-test", ["qunit", "ember-test-app/tests/helpers", "@ember/test-helpers", "@ember/template-factory"], function (_qunit, _helpers, _testHelpers, _templateFactory) {
+  "use strict";
+
+  0; //eaimeta@70e063a35619d71f0,"qunit",0,"ember-test-app/tests/helpers",0,"@ember/test-helpers",0,"@ember/template-factory"eaimeta@70e063a35619d71f
+  (0, _qunit.module)("Integration | Helper | substring", function (hooks) {
+    (0, _helpers.setupRenderingTest)(hooks);
+
+    // TODO: Replace this with your real tests.
+    (0, _qunit.test)("it renders", async function (assert) {
+      this.set("inputValue", "1234");
+      await (0, _testHelpers.render)((0, _templateFactory.createTemplateFactory)(
+      /*
+        {{substring this.inputValue}}
+      */
+      {
+        "id": "80cZ3g9H",
+        "block": "[[[1,[28,[35,0],[[30,0,[\"inputValue\"]]],null]]],[],false,[\"substring\"]]",
+        "moduleName": "/Users/provility/Documents/wokspace/ember-worlspace/practice-ember-js/ember-test-app/tests/integration/helpers/substring-test.js",
+        "isStrictMode": false
+      }));
+      assert.dom().hasText("1234");
     });
   });
 });

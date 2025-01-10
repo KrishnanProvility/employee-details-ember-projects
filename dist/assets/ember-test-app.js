@@ -38,6 +38,32 @@
   });
   0; //eaimeta@70e063a35619d71f0,"@glimmer/component/-private/ember-component-manager"eaimeta@70e063a35619d71f
 });
+;define("ember-test-app/components/calculator", ["exports", "@ember/component", "@glimmer/component", "@ember/template-factory"], function (_exports, _component, _component2, _templateFactory) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+  0; //eaimeta@70e063a35619d71f0,"@glimmer/component",0,"@ember/template-factory",0,"@ember/component"eaimeta@70e063a35619d71f
+  const __COLOCATED_TEMPLATE__ = (0, _templateFactory.createTemplateFactory)(
+  /*
+    {{this.calculate 1 2 op="add"}}
+  */
+  {
+    "id": "/7uNaubl",
+    "block": "[[[1,[28,[30,0,[\"calculate\"]],[1,2],[[\"op\"],[\"add\"]]]]],[],false,[]]",
+    "moduleName": "ember-test-app/components/calculator.hbs",
+    "isStrictMode": false
+  });
+  class Calculator extends _component2.default {
+    calculate(first, second, options) {
+      // ...
+    }
+  }
+  _exports.default = Calculator;
+  (0, _component.setComponentTemplate)(__COLOCATED_TEMPLATE__, Calculator);
+});
 ;define("ember-test-app/components/error-dailog/component", ["exports", "@glimmer/component"], function (_exports, _component) {
   "use strict";
 
@@ -89,7 +115,7 @@
   const __COLOCATED_TEMPLATE__ = (0, _templateFactory.createTemplateFactory)(
   /*
     <form>
-    <label for="message">Message</label>
+    <label for="message">MessageBox</label>
     <input id="message" />
     <button type="submit">
       Send
@@ -97,44 +123,51 @@
   </form>
   */
   {
-    "id": "H6/RBT6U",
-    "block": "[[[10,\"form\"],[12],[1,\"\\n  \"],[10,\"label\"],[14,\"for\",\"message\"],[12],[1,\"Message\"],[13],[1,\"\\n  \"],[10,\"input\"],[14,1,\"message\"],[12],[13],[1,\"\\n  \"],[10,\"button\"],[14,4,\"submit\"],[12],[1,\"\\n    Send\\n  \"],[13],[1,\"\\n\"],[13]],[],false,[\"form\",\"label\",\"input\",\"button\"]]",
+    "id": "X6IMR550",
+    "block": "[[[10,\"form\"],[12],[1,\"\\n  \"],[10,\"label\"],[14,\"for\",\"message\"],[12],[1,\"MessageBox\"],[13],[1,\"\\n  \"],[10,\"input\"],[14,1,\"message\"],[12],[13],[1,\"\\n  \"],[10,\"button\"],[14,4,\"submit\"],[12],[1,\"\\n    Send\\n  \"],[13],[1,\"\\n\"],[13]],[],false,[\"form\",\"label\",\"input\",\"button\"]]",
     "moduleName": "ember-test-app/components/input-box.hbs",
     "isStrictMode": false
   });
   var _default = _exports.default = (0, _component.setComponentTemplate)(__COLOCATED_TEMPLATE__, (0, _templateOnly.default)(undefined, "input-box"));
 });
-;define("ember-test-app/components/message-box", ["exports", "@ember/component", "@ember/component/template-only", "@ember/template-factory"], function (_exports, _component, _templateOnly, _templateFactory) {
+;define("ember-test-app/components/message-box", ["exports", "@ember/component", "@glimmer/component", "@ember/template-factory"], function (_exports, _component, _component2, _templateFactory) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
     value: true
   });
   _exports.default = void 0;
-  0; //eaimeta@70e063a35619d71f0,"@ember/component/template-only",0,"@ember/template-factory",0,"@ember/component"eaimeta@70e063a35619d71f
+  0; //eaimeta@70e063a35619d71f0,"@glimmer/component",0,"@ember/template-factory",0,"@ember/component"eaimeta@70e063a35619d71f
+  function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+  function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
+  function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
   const __COLOCATED_TEMPLATE__ = (0, _templateFactory.createTemplateFactory)(
   /*
     <Message::Avatar
           @title="{{@username}}'s avatar"
-    @initial={{@avatarInitial}}
+          @initial={{this.substring @username 0 1}}
     @isActive={{@isCurrentUser}}
     @class="{{if @isCurrentUser 'current-user'}}"
    />
-  
-  
   <section>
     <Message::Username @name={{@username}} @localTime={{@userLocalTime}} />
-  
     {{yield}}
   </section>
   */
   {
-    "id": "a+pCPaxs",
-    "block": "[[[8,[39,0],null,[[\"@title\",\"@initial\",\"@isActive\",\"@class\"],[[29,[[30,1],\"'s avatar\"]],[30,2],[30,3],[29,[[52,[30,3],\"current-user\"]]]]],null],[1,\"\\n\\n\\n\"],[10,\"section\"],[12],[1,\"\\n  \"],[8,[39,3],null,[[\"@name\",\"@localTime\"],[[30,1],[30,4]]],null],[1,\"\\n\\n  \"],[18,5,null],[1,\"\\n\"],[13]],[\"@username\",\"@avatarInitial\",\"@isCurrentUser\",\"@userLocalTime\",\"&default\"],false,[\"message/avatar\",\"if\",\"section\",\"message/username\",\"yield\"]]",
+    "id": "Fnyd4PHc",
+    "block": "[[[8,[39,0],null,[[\"@title\",\"@initial\",\"@isActive\",\"@class\"],[[29,[[30,1],\"'s avatar\"]],[28,[30,0,[\"substring\"]],[[30,1],0,1],null],[30,2],[29,[[52,[30,2],\"current-user\"]]]]],null],[1,\"\\n\"],[10,\"section\"],[12],[1,\"\\n  \"],[8,[39,3],null,[[\"@name\",\"@localTime\"],[[30,1],[30,3]]],null],[1,\"\\n  \"],[18,4,null],[1,\"\\n\"],[13]],[\"@username\",\"@isCurrentUser\",\"@userLocalTime\",\"&default\"],false,[\"message/avatar\",\"if\",\"section\",\"message/username\",\"yield\"]]",
     "moduleName": "ember-test-app/components/message-box.hbs",
     "isStrictMode": false
   });
-  var _default = _exports.default = (0, _component.setComponentTemplate)(__COLOCATED_TEMPLATE__, (0, _templateOnly.default)(undefined, "message-box"));
+  class MessageBox extends _component2.default {
+    constructor(...args) {
+      super(...args);
+      _defineProperty(this, "substring", (string, start, end) => string.substring(start, end));
+    }
+  }
+  _exports.default = MessageBox;
+  (0, _component.setComponentTemplate)(__COLOCATED_TEMPLATE__, MessageBox);
 });
 ;define("ember-test-app/components/message/avatar", ["exports", "@ember/component", "@ember/component/template-only", "@ember/template-factory"], function (_exports, _component, _templateOnly, _templateFactory) {
   "use strict";
@@ -457,14 +490,15 @@
   
       <SendMessage></SendMessage>
       <RecivedMessage></RecivedMessage>
+  
       <InputBox></InputBox>
   
   
   </div>
   */
   {
-    "id": "Z1AgfOXH",
-    "block": "[[[10,0],[14,0,\"messages\"],[12],[1,\"\\n\\n    \"],[8,[39,1],null,null,[[\"default\"],[[[],[]]]]],[1,\"\\n    \"],[8,[39,2],null,null,[[\"default\"],[[[],[]]]]],[1,\"\\n    \"],[8,[39,3],null,null,[[\"default\"],[[[],[]]]]],[1,\"\\n\\n\\n\"],[13]],[],false,[\"div\",\"send-message\",\"recived-message\",\"input-box\"]]",
+    "id": "1OcURHLk",
+    "block": "[[[10,0],[14,0,\"messages\"],[12],[1,\"\\n\\n    \"],[8,[39,1],null,null,[[\"default\"],[[[],[]]]]],[1,\"\\n    \"],[8,[39,2],null,null,[[\"default\"],[[[],[]]]]],[1,\"\\n\\n    \"],[8,[39,3],null,null,[[\"default\"],[[[],[]]]]],[1,\"\\n\\n\\n\"],[13]],[],false,[\"div\",\"send-message\",\"recived-message\",\"input-box\"]]",
     "moduleName": "ember-test-app/templates/application.hbs",
     "isStrictMode": false
   });
@@ -584,7 +618,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("ember-test-app/app")["default"].create({"name":"ember-test-app","version":"0.0.0+cc6aa18c"});
+            require("ember-test-app/app")["default"].create({"name":"ember-test-app","version":"0.0.0+893acdc1"});
           }
         
 //# sourceMappingURL=ember-test-app.map

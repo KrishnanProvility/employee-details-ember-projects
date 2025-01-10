@@ -3,22 +3,22 @@ import { setupRenderingTest } from "ember-test-app/tests/helpers";
 import { render } from "@ember/test-helpers";
 import { hbs } from "ember-cli-htmlbars";
 
-module("Integration | Component | error-dailog", function (hooks) {
+module("Integration | Component | calculator", function (hooks) {
   setupRenderingTest(hooks);
 
   test("it renders", async function (assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<ErrorDailog />`);
+    await render(hbs`<Calculator />`);
 
     assert.dom().hasText("");
 
     // Template block usage:
     await render(hbs`
-      <ErrorDailog>
+      <Calculator>
         template block text
-      </ErrorDailog>
+      </Calculator>
     `);
 
     assert.dom().hasText("template block text");
