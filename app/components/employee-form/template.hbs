@@ -1,0 +1,36 @@
+<form {{on "submit" this.onSubmit}}>
+  <h1>Employee Form</h1>
+  <div>
+    <label for="name">Name</label>
+    <input id="name" type="text" value={{this.name}} {{on "input" this.updateName}} />
+  </div>
+  <div>
+    <label for="department">Department</label>
+    <select id="department" value={{this.department}} {{on "change" this.updateDepartment}}>
+      <option value="HR">HR</option>
+      <option value="Developer">Developer</option>
+      <option value="Tester">Tester</option>
+      <option value="Manager">Manager</option>
+    </select>
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input id="email" type="email" value={{this.email}} {{on "input" this.updateEmail}} />
+  </div>
+  <div>
+    <label for="contact">Contact Number</label>
+    <input id="contact" type="text" value={{this.contact}} {{on "input" this.updateContact}} />
+  </div>
+  <div>
+    <label for="address">Address</label>
+    <textarea id="address" {{on "input" this.updateAddress}}>{{this.address}}</textarea>
+  </div>
+  <div>
+    <label for="salary">Salary</label>
+    <input id="salary" type="number" value={{this.salary}} {{on "input" this.updateSalary}} />
+  </div>
+  <div class="form-buttons">
+  <button type="submit">Submit</button>
+  <LinkTo @route="index">Cancel</LinkTo>
+  </div>
+</form>

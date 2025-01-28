@@ -1,0 +1,42 @@
+<div class="employee-table">
+
+  <h2>Employee List <LinkTo @route="employee-form" @model={{hash}}>Add</LinkTo>
+  </h2>
+  <table>
+    <thead>
+    <tr>
+      <th>Emp-Id</th>
+      <th>Emp-Name</th>
+      <th>Emp-Department</th>
+      <th>Email</th>
+      <th>Contact-Number</th>
+      <th>Address</th>
+      <th>Salary</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#if @model.length}}
+      {{#each @model as |employee|}}
+        <tr>
+          <td>{{employee.id}}</td>
+          <td>{{employee.name}}</td>
+          <td>{{employee.department}}</td>
+          <td>{{employee.email}}</td>
+          <td>{{employee.contact}}</td>
+          <td>{{employee.address}}</td>
+          <td>{{employee.salary}}</td>
+          <td>
+            <LinkTo @route="employee-form" @model={{employee}}>Edit</LinkTo>
+          </td>
+        </tr>
+      {{/each}}
+    {{else}}
+      <tr>
+        <td colspan="8">No employees available</td>
+      </tr>
+    {{/if}}
+    </tbody>
+  </table>
+
+</div>
