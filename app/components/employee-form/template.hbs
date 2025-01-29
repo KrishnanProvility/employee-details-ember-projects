@@ -2,7 +2,7 @@
   <h1>Employee Form</h1>
   <div>
     <label for="name">Name</label>
-    <input id="name" type="text" value={{this.name}} {{on "input" this.updateName}} />
+    <input id="name" type="text" value={{this.name}} {{on "input" this.updateName}} required />
   </div>
   <div>
     <label for="department">Department</label>
@@ -15,11 +15,11 @@
   </div>
   <div>
     <label for="email">Email</label>
-    <input id="email" type="email" value={{this.email}} {{on "input" this.updateEmail}} />
+    <input id="email" type="email" value={{this.email}} {{on "input" this.updateEmail}} required />
   </div>
   <div>
     <label for="contact">Contact Number</label>
-    <input id="contact" type="text" value={{this.contact}} {{on "input" this.updateContact}} />
+    <input id="contact" type="number" value={{this.contact}} {{on "input" this.updateContact}} />
   </div>
   <div>
     <label for="address">Address</label>
@@ -29,8 +29,7 @@
     <label for="salary">Salary</label>
     <input id="salary" type="number" value={{this.salary}} {{on "input" this.updateSalary}} />
   </div>
-  <div class="form-buttons">
-  <button type="submit">Submit</button>
-  <LinkTo @route="index">Cancel</LinkTo>
-  </div>
+
+  <LinkTo class="cancel-button" @route="index">Cancel</LinkTo>
+      <button type="submit" style="margin-left: 417px">Submit</button>
 </form>

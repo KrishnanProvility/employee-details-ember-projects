@@ -175,8 +175,8 @@
   });
   _exports.default = void 0;
   var _default = _exports.default = Ember.HTMLBars.template({
-    "id": "4sYUHBWL",
-    "block": "{\"symbols\":[],\"statements\":[[11,\"form\"],[4,[38,0],[\"submit\",[32,0,[\"onSubmit\"]]],null],[12],[2,\"\\n  \"],[10,\"h1\"],[12],[2,\"Employee Form\"],[13],[2,\"\\n  \"],[10,\"div\"],[12],[2,\"\\n    \"],[10,\"label\"],[14,\"for\",\"name\"],[12],[2,\"Name\"],[13],[2,\"\\n    \"],[11,\"input\"],[24,1,\"name\"],[16,2,[32,0,[\"name\"]]],[24,4,\"text\"],[4,[38,0],[\"input\",[32,0,[\"updateName\"]]],null],[12],[13],[2,\"\\n  \"],[13],[2,\"\\n  \"],[10,\"div\"],[12],[2,\"\\n    \"],[10,\"label\"],[14,\"for\",\"department\"],[12],[2,\"Department\"],[13],[2,\"\\n    \"],[11,\"select\"],[24,1,\"department\"],[16,2,[32,0,[\"department\"]]],[4,[38,0],[\"change\",[32,0,[\"updateDepartment\"]]],null],[12],[2,\"\\n      \"],[10,\"option\"],[14,2,\"HR\"],[12],[2,\"HR\"],[13],[2,\"\\n      \"],[10,\"option\"],[14,2,\"Developer\"],[12],[2,\"Developer\"],[13],[2,\"\\n      \"],[10,\"option\"],[14,2,\"Tester\"],[12],[2,\"Tester\"],[13],[2,\"\\n      \"],[10,\"option\"],[14,2,\"Manager\"],[12],[2,\"Manager\"],[13],[2,\"\\n    \"],[13],[2,\"\\n  \"],[13],[2,\"\\n  \"],[10,\"div\"],[12],[2,\"\\n    \"],[10,\"label\"],[14,\"for\",\"email\"],[12],[2,\"Email\"],[13],[2,\"\\n    \"],[11,\"input\"],[24,1,\"email\"],[16,2,[32,0,[\"email\"]]],[24,4,\"email\"],[4,[38,0],[\"input\",[32,0,[\"updateEmail\"]]],null],[12],[13],[2,\"\\n  \"],[13],[2,\"\\n  \"],[10,\"div\"],[12],[2,\"\\n    \"],[10,\"label\"],[14,\"for\",\"contact\"],[12],[2,\"Contact Number\"],[13],[2,\"\\n    \"],[11,\"input\"],[24,1,\"contact\"],[16,2,[32,0,[\"contact\"]]],[24,4,\"text\"],[4,[38,0],[\"input\",[32,0,[\"updateContact\"]]],null],[12],[13],[2,\"\\n  \"],[13],[2,\"\\n  \"],[10,\"div\"],[12],[2,\"\\n    \"],[10,\"label\"],[14,\"for\",\"address\"],[12],[2,\"Address\"],[13],[2,\"\\n    \"],[11,\"textarea\"],[24,1,\"address\"],[4,[38,0],[\"input\",[32,0,[\"updateAddress\"]]],null],[12],[1,[32,0,[\"address\"]]],[13],[2,\"\\n  \"],[13],[2,\"\\n  \"],[10,\"div\"],[12],[2,\"\\n    \"],[10,\"label\"],[14,\"for\",\"salary\"],[12],[2,\"Salary\"],[13],[2,\"\\n    \"],[11,\"input\"],[24,1,\"salary\"],[16,2,[32,0,[\"salary\"]]],[24,4,\"number\"],[4,[38,0],[\"input\",[32,0,[\"updateSalary\"]]],null],[12],[13],[2,\"\\n  \"],[13],[2,\"\\n  \"],[10,\"div\"],[14,0,\"form-buttons\"],[12],[2,\"\\n  \"],[10,\"button\"],[14,4,\"submit\"],[12],[2,\"Submit\"],[13],[2,\"\\n  \"],[8,\"link-to\",[],[[\"@route\"],[\"index\"]],[[\"default\"],[{\"statements\":[[2,\"Cancel\"]],\"parameters\":[]}]]],[2,\"\\n  \"],[13],[2,\"\\n\"],[13],[2,\"\\n\"]],\"hasEval\":false,\"upvars\":[\"on\"]}",
+    "id": "ND89xqnQ",
+    "block": "{\"symbols\":[],\"statements\":[[11,\"form\"],[4,[38,0],[\"submit\",[32,0,[\"onSubmit\"]]],null],[12],[2,\"\\n  \"],[10,\"h1\"],[12],[2,\"Employee Form\"],[13],[2,\"\\n  \"],[10,\"div\"],[12],[2,\"\\n    \"],[10,\"label\"],[14,\"for\",\"name\"],[12],[2,\"Name\"],[13],[2,\"\\n    \"],[11,\"input\"],[24,1,\"name\"],[16,2,[32,0,[\"name\"]]],[24,\"required\",\"\"],[24,4,\"text\"],[4,[38,0],[\"input\",[32,0,[\"updateName\"]]],null],[12],[13],[2,\"\\n  \"],[13],[2,\"\\n  \"],[10,\"div\"],[12],[2,\"\\n    \"],[10,\"label\"],[14,\"for\",\"department\"],[12],[2,\"Department\"],[13],[2,\"\\n    \"],[11,\"select\"],[24,1,\"department\"],[16,2,[32,0,[\"department\"]]],[4,[38,0],[\"change\",[32,0,[\"updateDepartment\"]]],null],[12],[2,\"\\n      \"],[10,\"option\"],[14,2,\"HR\"],[12],[2,\"HR\"],[13],[2,\"\\n      \"],[10,\"option\"],[14,2,\"Developer\"],[12],[2,\"Developer\"],[13],[2,\"\\n      \"],[10,\"option\"],[14,2,\"Tester\"],[12],[2,\"Tester\"],[13],[2,\"\\n      \"],[10,\"option\"],[14,2,\"Manager\"],[12],[2,\"Manager\"],[13],[2,\"\\n    \"],[13],[2,\"\\n  \"],[13],[2,\"\\n  \"],[10,\"div\"],[12],[2,\"\\n    \"],[10,\"label\"],[14,\"for\",\"email\"],[12],[2,\"Email\"],[13],[2,\"\\n    \"],[11,\"input\"],[24,1,\"email\"],[16,2,[32,0,[\"email\"]]],[24,\"required\",\"\"],[24,4,\"email\"],[4,[38,0],[\"input\",[32,0,[\"updateEmail\"]]],null],[12],[13],[2,\"\\n  \"],[13],[2,\"\\n  \"],[10,\"div\"],[12],[2,\"\\n    \"],[10,\"label\"],[14,\"for\",\"contact\"],[12],[2,\"Contact Number\"],[13],[2,\"\\n    \"],[11,\"input\"],[24,1,\"contact\"],[16,2,[32,0,[\"contact\"]]],[24,4,\"number\"],[4,[38,0],[\"input\",[32,0,[\"updateContact\"]]],null],[12],[13],[2,\"\\n  \"],[13],[2,\"\\n  \"],[10,\"div\"],[12],[2,\"\\n    \"],[10,\"label\"],[14,\"for\",\"address\"],[12],[2,\"Address\"],[13],[2,\"\\n    \"],[11,\"textarea\"],[24,1,\"address\"],[4,[38,0],[\"input\",[32,0,[\"updateAddress\"]]],null],[12],[1,[32,0,[\"address\"]]],[13],[2,\"\\n  \"],[13],[2,\"\\n  \"],[10,\"div\"],[12],[2,\"\\n    \"],[10,\"label\"],[14,\"for\",\"salary\"],[12],[2,\"Salary\"],[13],[2,\"\\n    \"],[11,\"input\"],[24,1,\"salary\"],[16,2,[32,0,[\"salary\"]]],[24,4,\"number\"],[4,[38,0],[\"input\",[32,0,[\"updateSalary\"]]],null],[12],[13],[2,\"\\n  \"],[13],[2,\"\\n\\n  \"],[8,\"link-to\",[[24,0,\"cancel-button\"]],[[\"@route\"],[\"index\"]],[[\"default\"],[{\"statements\":[[2,\"Cancel\"]],\"parameters\":[]}]]],[2,\"\\n      \"],[10,\"button\"],[14,5,\"margin-left: 417px\"],[14,4,\"submit\"],[12],[2,\"Submit\"],[13],[2,\"\\n\"],[13],[2,\"\\n\"]],\"hasEval\":false,\"upvars\":[\"on\"]}",
     "meta": {
       "moduleName": "employee-management-ember/components/employee-form/template.hbs"
     }
@@ -228,8 +228,8 @@
   });
   _exports.default = void 0;
   var _default = _exports.default = Ember.HTMLBars.template({
-    "id": "kSEK65BY",
-    "block": "{\"symbols\":[\"employee\"],\"statements\":[[10,\"div\"],[14,0,\"employee-table\"],[12],[2,\"\\n\\n  \"],[10,\"h2\"],[12],[2,\"Employee List \"],[8,\"link-to\",[[24,0,\"add-button\"]],[[\"@route\",\"@model\"],[\"employee-form\",[34,4]]],[[\"default\"],[{\"statements\":[[2,\"Add\"]],\"parameters\":[]}]]],[2,\"\\n  \"],[13],[2,\"\\n  \"],[10,\"table\"],[12],[2,\"\\n    \"],[10,\"thead\"],[12],[2,\"\\n    \"],[10,\"tr\"],[12],[2,\"\\n      \"],[10,\"th\"],[12],[2,\"Emp-Id\"],[13],[2,\"\\n      \"],[10,\"th\"],[12],[2,\"Emp-Name\"],[13],[2,\"\\n      \"],[10,\"th\"],[12],[2,\"Emp-Department\"],[13],[2,\"\\n      \"],[10,\"th\"],[12],[2,\"Email\"],[13],[2,\"\\n      \"],[10,\"th\"],[12],[2,\"Contact-Number\"],[13],[2,\"\\n      \"],[10,\"th\"],[12],[2,\"Address\"],[13],[2,\"\\n      \"],[10,\"th\"],[12],[2,\"Salary\"],[13],[2,\"\\n      \"],[10,\"th\"],[12],[2,\"Actions\"],[13],[2,\"\\n    \"],[13],[2,\"\\n    \"],[13],[2,\"\\n    \"],[10,\"tbody\"],[12],[2,\"\\n\"],[6,[37,5],[[32,0,[\"employee\",\"employees\",\"length\"]]],null,[[\"default\",\"else\"],[{\"statements\":[[6,[37,3],[[30,[36,2],[[30,[36,2],[[32,0,[\"employee\",\"employees\"]]],null]],null]],null,[[\"default\"],[{\"statements\":[[2,\"        \"],[10,\"tr\"],[12],[2,\"\\n          \"],[10,\"td\"],[12],[1,[32,1,[\"id\"]]],[13],[2,\"\\n          \"],[10,\"td\"],[12],[1,[32,1,[\"name\"]]],[13],[2,\"\\n          \"],[10,\"td\"],[12],[1,[32,1,[\"department\"]]],[13],[2,\"\\n          \"],[10,\"td\"],[12],[1,[32,1,[\"email\"]]],[13],[2,\"\\n          \"],[10,\"td\"],[12],[1,[32,1,[\"contact\"]]],[13],[2,\"\\n          \"],[10,\"td\"],[12],[1,[32,1,[\"address\"]]],[13],[2,\"\\n          \"],[10,\"td\"],[12],[1,[32,1,[\"salary\"]]],[13],[2,\"\\n          \"],[10,\"td\"],[12],[2,\"\\n            \"],[8,\"link-to\",[[24,0,\"edit-button\"]],[[\"@route\",\"@model\"],[\"employee-form\",[32,1]]],[[\"default\"],[{\"statements\":[[2,\"Edit\"]],\"parameters\":[]}]]],[2,\"\\n              \"],[11,\"button\"],[4,[38,1],[\"click\",[30,[36,0],[[32,0,[\"deleteEmployee\"]],[32,1,[\"id\"]]],null]],null],[12],[2,\"Delete\"],[13],[2,\"\\n          \"],[13],[2,\"\\n        \"],[13],[2,\"\\n\"]],\"parameters\":[1]}]]]],\"parameters\":[]},{\"statements\":[[2,\"      \"],[10,\"tr\"],[12],[2,\"\\n        \"],[10,\"td\"],[14,\"colspan\",\"8\"],[12],[2,\"No employees available\"],[13],[2,\"\\n      \"],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"    \"],[13],[2,\"\\n  \"],[13],[2,\"\\n\\n\"],[13],[2,\"\\n\"]],\"hasEval\":false,\"upvars\":[\"fn\",\"on\",\"-track-array\",\"each\",\"hash\",\"if\"]}",
+    "id": "GKp2YMSR",
+    "block": "{\"symbols\":[\"employee\"],\"statements\":[[10,\"div\"],[14,0,\"employee-table\"],[12],[2,\"\\n\\n  \"],[10,\"h2\"],[12],[2,\"Employee List \"],[8,\"link-to\",[[24,0,\"add-button\"]],[[\"@route\"],[\"add-emp-details\"]],[[\"default\"],[{\"statements\":[[2,\"Add\"]],\"parameters\":[]}]]],[2,\"\\n  \"],[13],[2,\"\\n  \"],[10,\"table\"],[12],[2,\"\\n    \"],[10,\"thead\"],[12],[2,\"\\n    \"],[10,\"tr\"],[12],[2,\"\\n      \"],[10,\"th\"],[12],[2,\"Emp-Id\"],[13],[2,\"\\n      \"],[10,\"th\"],[12],[2,\"Emp-Name\"],[13],[2,\"\\n      \"],[10,\"th\"],[12],[2,\"Emp-Department\"],[13],[2,\"\\n      \"],[10,\"th\"],[12],[2,\"Email\"],[13],[2,\"\\n      \"],[10,\"th\"],[12],[2,\"Contact-Number\"],[13],[2,\"\\n      \"],[10,\"th\"],[12],[2,\"Address\"],[13],[2,\"\\n      \"],[10,\"th\"],[12],[2,\"Salary\"],[13],[2,\"\\n      \"],[10,\"th\"],[12],[2,\"Actions\"],[13],[2,\"\\n    \"],[13],[2,\"\\n    \"],[13],[2,\"\\n    \"],[10,\"tbody\"],[12],[2,\"\\n\"],[6,[37,4],[[32,0,[\"employee\",\"employees\",\"length\"]]],null,[[\"default\",\"else\"],[{\"statements\":[[6,[37,3],[[30,[36,2],[[30,[36,2],[[32,0,[\"employee\",\"employees\"]]],null]],null]],null,[[\"default\"],[{\"statements\":[[2,\"        \"],[10,\"tr\"],[12],[2,\"\\n          \"],[10,\"td\"],[12],[1,[32,1,[\"id\"]]],[13],[2,\"\\n          \"],[10,\"td\"],[12],[1,[32,1,[\"name\"]]],[13],[2,\"\\n          \"],[10,\"td\"],[12],[1,[32,1,[\"department\"]]],[13],[2,\"\\n          \"],[10,\"td\"],[12],[1,[32,1,[\"email\"]]],[13],[2,\"\\n          \"],[10,\"td\"],[12],[1,[32,1,[\"contact\"]]],[13],[2,\"\\n          \"],[10,\"td\"],[12],[1,[32,1,[\"address\"]]],[13],[2,\"\\n          \"],[10,\"td\"],[12],[1,[32,1,[\"salary\"]]],[13],[2,\"\\n          \"],[10,\"td\"],[12],[2,\"\\n            \"],[8,\"link-to\",[[24,0,\"edit-button\"]],[[\"@route\",\"@model\"],[\"employee-form\",[32,1]]],[[\"default\"],[{\"statements\":[[2,\"Edit\"]],\"parameters\":[]}]]],[2,\"\\n              \"],[11,\"button\"],[4,[38,1],[\"click\",[30,[36,0],[[32,0,[\"deleteEmployee\"]],[32,1,[\"id\"]]],null]],null],[12],[2,\"Delete\"],[13],[2,\"\\n          \"],[13],[2,\"\\n        \"],[13],[2,\"\\n\"]],\"parameters\":[1]}]]]],\"parameters\":[]},{\"statements\":[[2,\"      \"],[10,\"tr\"],[12],[2,\"\\n        \"],[10,\"td\"],[14,\"colspan\",\"8\"],[12],[2,\"No employees available\"],[13],[2,\"\\n      \"],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"    \"],[13],[2,\"\\n  \"],[13],[2,\"\\n\\n\"],[13],[2,\"\\n\"]],\"hasEval\":false,\"upvars\":[\"fn\",\"on\",\"-track-array\",\"each\",\"if\"]}",
     "meta": {
       "moduleName": "employee-management-ember/components/index/template.hbs"
     }
@@ -453,11 +453,21 @@
     this.route('index', {
       path: '/'
     });
-    this.route('employee-form');
     this.route('employee-form', {
-      path: '/employee-form/:employee_id'
+      path: '/employee-form-edit/:employee_id'
     });
+    this.route('add-emp-details');
   });
+});
+;define("employee-management-ember/routes/add-emp-details", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+  class AddEmpDetailsRoute extends Ember.Route {}
+  _exports.default = AddEmpDetailsRoute;
 });
 ;define("employee-management-ember/routes/employee-form", ["exports"], function (_exports) {
   "use strict";
@@ -594,17 +604,17 @@
     initializer: function () {
       return [{
         id: 1,
-        name: 'John Doe',
-        department: 'HR',
-        email: 'john@example.com',
+        name: 'Krishnan',
+        department: 'Developer',
+        email: 'krishnan@provility.com',
         contact: '1234567890',
         address: '123 Street, City',
         salary: 50000
       }, {
         id: 2,
-        name: 'Jane Smith',
-        department: 'Developer',
-        email: 'jane@example.com',
+        name: 'vignesh',
+        department: ' senior Developer',
+        email: 'vignesh@provility.com',
         contact: '9876543210',
         address: '456 Avenue, City',
         salary: 60000
@@ -622,6 +632,21 @@
     enumerable: true,
     get: function () {
       return _store.default;
+    }
+  });
+});
+;define("employee-management-ember/templates/add-emp-details", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+  var _default = _exports.default = Ember.HTMLBars.template({
+    "id": "2ImoDoOK",
+    "block": "{\"symbols\":[],\"statements\":[[8,\"employee-form\",[],[[\"@model\"],[[32,0,[\"model\"]]]],null],[2,\"\\n\"]],\"hasEval\":false,\"upvars\":[]}",
+    "meta": {
+      "moduleName": "employee-management-ember/templates/add-emp-details.hbs"
     }
   });
 });
@@ -745,7 +770,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("employee-management-ember/app")["default"].create({"name":"employee-management-ember","version":"0.0.0+1ccea87c"});
+            require("employee-management-ember/app")["default"].create({"name":"employee-management-ember","version":"0.0.0+99593319"});
           }
         
 //# sourceMappingURL=employee-management-ember.map

@@ -44,6 +44,17 @@ define("employee-management-ember/tests/test-helper", ["employee-management-embe
   (0, _testHelpers.setApplication)(_app.default.create(_environment.default.APP));
   (0, _emberQunit.start)();
 });
+define("employee-management-ember/tests/unit/routes/add-emp-details-test", ["qunit", "ember-qunit"], function (_qunit, _emberQunit) {
+  "use strict";
+
+  (0, _qunit.module)('Unit | Route | add-emp-details', function (hooks) {
+    (0, _emberQunit.setupTest)(hooks);
+    (0, _qunit.test)('it exists', function (assert) {
+      let route = this.owner.lookup('route:add-emp-details');
+      assert.ok(route);
+    });
+  });
+});
 define("employee-management-ember/tests/unit/routes/add-emp-form-test", ["qunit", "ember-qunit"], function (_qunit, _emberQunit) {
   "use strict";
 
