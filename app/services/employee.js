@@ -36,4 +36,7 @@ export default class EmployeeService extends Service {
   getEmployeeById(id) {
     return this.employees.find((employee) => employee.id === id);
   }
+  deleteEmployee(id) {
+    this.employees = this.employees.filter(emp => emp.id !== id);
+  }
 }

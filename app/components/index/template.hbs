@@ -1,6 +1,6 @@
 <div class="employee-table">
 
-  <h2>Employee List <LinkTo @route="employee-form" @model={{hash}}>Add</LinkTo>
+  <h2>Employee List <LinkTo class="add-button" @route="employee-form" @model={{hash}}>Add</LinkTo>
   </h2>
   <table>
     <thead>
@@ -16,8 +16,8 @@
     </tr>
     </thead>
     <tbody>
-    {{#if @model.length}}
-      {{#each @model as |employee|}}
+    {{#if this.employee.employees.length}}
+      {{#each this.employee.employees as |employee|}}
         <tr>
           <td>{{employee.id}}</td>
           <td>{{employee.name}}</td>
@@ -27,7 +27,8 @@
           <td>{{employee.address}}</td>
           <td>{{employee.salary}}</td>
           <td>
-            <LinkTo @route="employee-form" @model={{employee}}>Edit</LinkTo>
+            <LinkTo class="edit-button" @route="employee-form" @model={{employee}}>Edit</LinkTo>
+              <button {{on "click" (fn this.deleteEmployee employee.id)}}>Delete</button>
           </td>
         </tr>
       {{/each}}
