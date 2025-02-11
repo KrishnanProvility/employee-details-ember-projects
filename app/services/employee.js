@@ -2,41 +2,72 @@ import Service from '@ember/service';
 import { tracked } from '@glimmer/tracking';
 
 export default class EmployeeService extends Service {
-  @tracked employees = [
-    {
-      id: 1,
-      name: 'Krishnan',
-      department: 'Developer',
-      email: 'krishnan@provility.com',
-      contact: '1234567890',
-      address: '123 Street, City',
-      salary: 50000,
-    },
-    {
-      id: 2,
-      name: 'vignesh',
-      department: ' senior Developer',
-      email: 'vignesh@provility.com',
-      contact: '9876543210',
-      address: '456 Avenue, City',
-      salary: 60000,
-    },
-  ];
+  @tracked employees = [];
 
-  addEmployee(employee) {
-    this.employees = [...this.employees, { ...employee, id: this.employees.length+1 }];
+  constructor() {
+    super(...arguments);
+    this.fetchEmployees();
   }
 
-  updateEmployee(updatedEmployee) {
-    this.employees = this.employees.map((employee) =>
-      employee.id === updatedEmployee.id ? updatedEmployee : employee
-    );
+  async fetchEmployees() {
+    try {
+      let response = await fetch('http://localhost:3000/employees');
+      this.employees = await response.json();
+      console.log(this.employees);
+    } catch (error) {
+      console.error('Error fetching employees:', error);
+    }
   }
+
+  async addEmployee(employee) {
+    try {
+      let response = await fetch('http://localhost:3000/employees', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(employee),
+      });
+      console.log(this.employees);
+      let newEmployee = await response.json();
+      this.employees = [...this.employees, newEmployee];
+
+    } catch (error) {
+      console.error('Error adding employee:', error);
+    }
+    console.log(this.employees);
+  }
+
+  async updateEmployee(updatedEmployee) {
+    try {
+      let response = await fetch(`http://localhost:3000/employees/${updatedEmployee.id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(updatedEmployee),
+      });
+      if (response.ok) {
+        console.log(response)
+        this.fetchEmployees();
+      } else {
+        console.error('Update failed:', await response.text());
+      }
+    } catch (error) {
+      console.error('Error updating employee:', error);
+    }
+  }
+
+  async deleteEmployee(id) {
+    try {
+      let response = await fetch(`http://localhost:3000/employees/${id}`,{method:'DELETE'});
+      this.fetchEmployees();
+    }
+    catch (error){
+      console.error('Error While Delete employee data',error);
+
+    }
+
+  }
+
 
   getEmployeeById(id) {
     return this.employees.find((employee) => employee.id === id);
-  }
-  deleteEmployee(id) {
-    this.employees = this.employees.filter(emp => emp.id !== id);
   }
 }

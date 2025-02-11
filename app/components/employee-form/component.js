@@ -43,7 +43,7 @@ export default class EmployeeFormComponent extends Component {
     event.preventDefault();
 
     const employeeData = {
-      id: this.args.model?.id || Date.now(),
+      id: this.args.model?.id || this.employee.employees.length+1,
       name: this.name,
       department: this.department,
       email: this.email,
@@ -53,7 +53,9 @@ export default class EmployeeFormComponent extends Component {
     };
 
     if (this.args.model) {
+
       this.employee.updateEmployee(employeeData);
+
     } else {
       this.employee.addEmployee(employeeData);
     }
