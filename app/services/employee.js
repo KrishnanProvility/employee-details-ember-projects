@@ -3,7 +3,6 @@ import { tracked } from '@glimmer/tracking';
 
 export default class EmployeeService extends Service {
   @tracked employees = [];
-
   constructor() {
     super(...arguments);
     this.fetchEmployees();
@@ -11,7 +10,7 @@ export default class EmployeeService extends Service {
 
   async fetchEmployees() {
     try {
-      let response = await fetch('http://localhost:3000/employees');
+      let response = await fetch('http://localhost:5000/employees');
       this.employees = await response.json();
       console.log(this.employees);
     } catch (error) {
@@ -21,7 +20,7 @@ export default class EmployeeService extends Service {
 
   async addEmployee(employee) {
     try {
-      let response = await fetch('http://localhost:3000/employees', {
+      let response = await fetch('http://localhost:5000/employees', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(employee),
@@ -38,7 +37,7 @@ export default class EmployeeService extends Service {
 
   async updateEmployee(updatedEmployee) {
     try {
-      let response = await fetch(`http://localhost:3000/employees/${updatedEmployee.id}`, {
+      let response = await fetch(`http://localhost:5000/employees/${updatedEmployee.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updatedEmployee),
@@ -56,14 +55,12 @@ export default class EmployeeService extends Service {
 
   async deleteEmployee(id) {
     try {
-      let response = await fetch(`http://localhost:3000/employees/${id}`,{method:'DELETE'});
+      let response = await fetch(`http://localhost:5000/employees/${id}`,{method:'DELETE'});
       this.fetchEmployees();
     }
     catch (error){
       console.error('Error While Delete employee data',error);
-
     }
-
   }
 
 

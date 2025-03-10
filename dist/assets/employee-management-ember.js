@@ -585,7 +585,7 @@
     }
     async fetchEmployees() {
       try {
-        let response = await fetch('http://localhost:3000/employees');
+        let response = await fetch('http://localhost:5000/employees');
         this.employees = await response.json();
         console.log(this.employees);
       } catch (error) {
@@ -594,7 +594,7 @@
     }
     async addEmployee(employee) {
       try {
-        let response = await fetch('http://localhost:3000/employees', {
+        let response = await fetch('http://localhost:5000/employees', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -611,7 +611,7 @@
     }
     async updateEmployee(updatedEmployee) {
       try {
-        let response = await fetch(`http://localhost:3000/employees/${updatedEmployee.id}`, {
+        let response = await fetch(`http://localhost:5000/employees/${updatedEmployee.id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json'
@@ -630,7 +630,7 @@
     }
     async deleteEmployee(id) {
       try {
-        let response = await fetch(`http://localhost:3000/employees/${id}`, {
+        let response = await fetch(`http://localhost:5000/employees/${id}`, {
           method: 'DELETE'
         });
         this.fetchEmployees();
@@ -798,7 +798,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("employee-management-ember/app")["default"].create({"name":"employee-management-ember","version":"0.0.0+b2f29a27"});
+            require("employee-management-ember/app")["default"].create({"name":"employee-management-ember","version":"0.0.0+885877ea"});
           }
         
 //# sourceMappingURL=employee-management-ember.map
